@@ -1,0 +1,12 @@
+# (촬영 전 준비) Expo Go의 앱별 마이크 허용 창을 미리 처리
+appId: host.exp.exponent
+---
+- tapOn: "녹음 시작"
+- tapOn:
+    text: "ALLOW"
+    optional: true
+- extendedWaitUntil:
+    visible: ".*듣고 있어요.*"
+    timeout: 10000
+- tapOn: "녹음 정지"
+- tapOn: "다시 녹음"

@@ -1,0 +1,12 @@
+# 분석 탭으로 이동, 이전 녹음이 남아 있으면 정리
+appId: host.exp.exponent
+---
+- tapOn: "분석"
+- runFlow:
+    when:
+      visible: "다시 녹음"
+    commands:
+      - tapOn: "다시 녹음"
+- extendedWaitUntil:
+    visible: "버튼을 눌러 울음소리를 녹음하세요"
+    timeout: 10000

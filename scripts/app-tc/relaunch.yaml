@@ -1,0 +1,13 @@
+# 앱을 다시 열어 분석(홈) 화면에서 시작한다 (Expo Go 초기화 없이)
+appId: host.exp.exponent
+---
+- stopApp
+- openLink: ${EXPO_URL}
+- runFlow:
+    when:
+      visible: "Reload"
+    commands:
+      - back
+- extendedWaitUntil:
+    visible: "버튼을 눌러 울음소리를 녹음하세요"
+    timeout: 60000

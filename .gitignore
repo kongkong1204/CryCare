@@ -1,0 +1,24 @@
+.DS_Store
+venv/
+__pycache__/
+*.pyc
+
+# 비밀/키
+.env
+
+# 모델·데이터 (§7: 리포에 키·wav·pkl 커밋 금지)
+*.pkl
+crycare.db*
+data/audio/*
+!data/audio/.gitkeep
+
+# TC 증거 (영상·실행 결과)
+evidence/
+
+# 비공개 문서·AI 도구 설정 (공개 저장소 제외)
+CryCare_스펙문서*.md
+/CLAUDE.md
+mobile/CLAUDE.md
+mobile/AGENTS.md
+mobile/.claude/
+mobile/.vscode/

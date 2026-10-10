@@ -1,0 +1,6 @@
+# 분석 결과 화면 대기 (녹음·분석하기 탭은 record_cry.sh --analyze가 수행)
+appId: host.exp.exponent
+---
+- extendedWaitUntil:
+    visible: "소리 분석 결과"
+    timeout: 30000

@@ -1,0 +1,20 @@
+# TC4 (2) 잘못 입력한 피드백(배고픔)을 졸림으로 수정 → 그 피드백으로 생긴 수유 기록 정리
+appId: host.exp.exponent
+---
+- tapOn: "분석 기록"
+- tapOn:
+    text: "실제: 배고픔"
+    index: 0
+- extendedWaitUntil:
+    visible: "분석 당시 기록"
+    timeout: 10000
+- scrollUntilVisible:
+    element: "실제로는 무엇이었나요?"
+    direction: DOWN
+    speed: 70
+- tapOn:
+    text: "졸림"
+    below: "실제로는 무엇이었나요?"
+- extendedWaitUntil:
+    visible: ".*다른 항목을 누르면 수정돼요.*"
+    timeout: 10000

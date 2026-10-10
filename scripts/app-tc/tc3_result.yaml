@@ -1,0 +1,9 @@
+# TC3 결과 화면 훑어보기
+appId: host.exp.exponent
+---
+- extendedWaitUntil:
+    visible: "이렇게 해보세요"
+    timeout: 30000
+- scrollUntilVisible:
+    element: "실제로는 무엇이었나요?"
+    direction: DOWN

@@ -1,0 +1,22 @@
+# TC7 내 데이터 전체 삭제 → 이력 0건
+appId: host.exp.exponent
+---
+- tapOn: "About"
+- scrollUntilVisible:
+    element: "내 데이터 전체 삭제"
+    direction: DOWN
+    speed: 70
+- tapOn: "내 데이터 전체 삭제"
+- extendedWaitUntil:
+    visible: ".*되돌릴 수 없어요.*"
+    timeout: 10000
+- tapOn: "삭제"
+- extendedWaitUntil:
+    visible: "삭제 완료"
+    timeout: 15000
+- tapOn: "OK"
+- tapOn: "이력"
+- tapOn: "분석 기록"
+- extendedWaitUntil:
+    visible: "아직 분석 기록이 없어요."
+    timeout: 10000

@@ -1,0 +1,17 @@
+# 이미지에 넣는 것: requirements.txt, backend/, crycare_final.pkl (Dockerfile COPY 기준)
+# crycare_final.pkl 은 여기서 제외하면 안 된다
+.git
+.env
+.env.*
+venv/
+**/__pycache__
+*.pyc
+.DS_Store
+crycare.db*
+crycare_final_v1.pkl
+data/
+evidence/
+mobile/
+scripts/
+CryCare_스펙문서*.md
+CLAUDE.md

@@ -1,0 +1,8 @@
+# TC4 (1) 이력: 피드백으로 자동 기록된 수유 2건 → 분석 기록 목록
+appId: host.exp.exponent
+---
+- tapOn: "이력"
+- tapOn: "수유·기저귀"
+- extendedWaitUntil:
+    visible: ".*피드백으로 자동 기록.*"
+    timeout: 10000

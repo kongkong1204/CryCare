@@ -1,0 +1,5 @@
+# TC4 (3) 수유·기저귀: 수정한 기록의 자동 수유 기록이 사라짐
+appId: host.exp.exponent
+---
+- back
+- tapOn: "수유·기저귀"

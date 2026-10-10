@@ -1,0 +1,10 @@
+fastapi==0.128.8
+uvicorn[standard]==0.39.0
+python-multipart==0.0.20
+anthropic==0.125.0
+librosa==0.11.0
+scikit-learn==1.6.1
+numpy==2.0.2
+soundfile==0.13.1
+joblib==1.5.3
+python-dotenv==1.2.1

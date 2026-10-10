@@ -1,0 +1,16 @@
+# 최초 실행 동의 (FR14). 개발자 메뉴 안내는 open.yaml에서 미리 닫는다.
+appId: host.exp.exponent
+---
+- extendedWaitUntil:
+    visible: "CryCare 시작하기"
+    timeout: 30000
+- scrollUntilVisible:
+    element: "동의하고 시작하기"
+    direction: DOWN
+    speed: 90
+- tapOn: ".*개인정보 수집·이용에 동의합니다.*"
+- tapOn: ".*육아 보조 도구임을 확인했습니다.*"
+- tapOn: "동의하고 시작하기"
+- extendedWaitUntil:
+    visible: "버튼을 눌러 울음소리를 녹음하세요"
+    timeout: 20000

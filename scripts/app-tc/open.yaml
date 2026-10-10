@@ -1,0 +1,17 @@
+# Expo Go로 앱을 새로 열고 개발자 메뉴 안내를 닫는다. URL은 run.sh가 넘긴다.
+# Expo Go 초기화 직후에는 앱이 뜬 뒤 안내 창이 늦게 나타나므로 그 창을 기다렸다 닫는다.
+appId: host.exp.exponent
+---
+- stopApp
+- openLink: ${EXPO_URL}
+- extendedWaitUntil:
+    visible: "Continue"
+    timeout: 60000
+- tapOn: "Continue"
+- extendedWaitUntil:
+    visible: "Reload"
+    timeout: 10000
+- back
+- extendedWaitUntil:
+    visible: "CryCare 시작하기"
+    timeout: 10000
